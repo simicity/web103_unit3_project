@@ -12,20 +12,20 @@ const App = () => {
       element: <Locations />
     },
     {
-      path: '/echolounge',
-      element: <LocationEvents index={1} />
+      path: '/sanfrancisco',
+      element: <LocationEvents location_id={1} />
     },
     {
-      path: '/houseofblues',
-      element: <LocationEvents index={2} />
+      path: '/sunnyvale',
+      element: <LocationEvents location_id={2} />
     },
     {
-      path: '/pavilion',
-      element: <LocationEvents index={3} />
+      path: '/bakersfield',
+      element: <LocationEvents location_id={3} />
     },
     {
-      path: '/americanairlines',
-      element: <LocationEvents index={4} />
+      path: '/monterey',
+      element: <LocationEvents location_id={4} />
     },
     {
       path: '/events',
@@ -37,7 +37,7 @@ const App = () => {
     <div className='app'>
 
       <header className='main-header'>
-        <h1>UnityGrid Plaza</h1>
+        <h1>Pickleball Champs</h1>
 
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>

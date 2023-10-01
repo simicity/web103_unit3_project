@@ -2,29 +2,15 @@ import React, { useState, useEffect } from 'react'
 import Event from '../components/Event'
 import '../css/LocationEvents.css'
 import EventsAPI from '../services/EventsAPI.js'
-import LocationsAPI from '../services/LocationsAPI.js'
 
-const LocationEvents = ({ location_id }) => {
-    const [location, setLocation] = useState([])
+const Events = () => {
     const [events, setEvents] = useState([])
 
     useEffect(() => {
         (async () => {
             try {
-                const eventData = await EventsAPI.getEventsByLocation(location_id)
+                const eventData = await EventsAPI.getAllEvents()
                 setEvents(eventData)
-            }
-            catch (error) {
-                throw error
-            }
-        }) ()
-    }, [])
-
-    useEffect(() => {
-        (async () => {
-            try {
-                const locationData = await LocationsAPI.getLocationById(location_id)
-                setLocation(locationData)
             }
             catch (error) {
                 throw error
@@ -35,13 +21,8 @@ const LocationEvents = ({ location_id }) => {
     return (
         <div className='location-events'>
             <header>
-                <div className='location-image'>
-                    <img src={location.image} />
-                </div>
-
-                <div className='location-info'>
-                    <h2>{location.name}</h2>
-                    <p>{location.address}, {location.city}, {location.state} {location.zip}</p>
+                <div className='search-bar'>
+                    <h2>Search Bar Under Construction...</h2>
                 </div>
             </header>
 
@@ -59,4 +40,4 @@ const LocationEvents = ({ location_id }) => {
     )
 }
 
-export default LocationEvents
+export default Events
