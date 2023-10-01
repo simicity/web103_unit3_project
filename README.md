@@ -1,10 +1,10 @@
-# WEB103 Project 3 - *Name of App Here*
+# WEB103 Project 3 - Pickleball Champs
 
 Submitted by: Miho Shimizu
 
-About this web app: **App description here**
+About this web app: A comprehensive platform for pickleball enthusiasts to discover pickleball tournaments. Users can browse a curated list of past and upcoming tournaments and filter by location.
 
-Time spent: **X** hours
+Time spent: 6 hours
 
 ## Required Features
 
@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 
 - [X] **The web app uses React to display data from the API**
 - [X] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
-  - [ ] **NOTE: Your GIF or a screenshot added to this README must include a view of your Railway database that shows the contents of the table used by your app**
+  - [X] **NOTE: Your GIF or a screenshot added to this README must include a view of your Railway database that shows the contents of the table used by your app**
 - [X] **The web app displays the title of the app**
 - [X] **A visual interface allows the user to select a Location they would like to view**
 - [X] **Clicking on a Location shows a list of all items from the Events table that corresponds to that Location**
@@ -22,7 +22,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] An additional page shows all possible `Events` that the user can sort and filter by `Location`
+- [X] An additional page shows all possible `Events` that the user can sort and filter by `Location`
 - [X] `Events` display a countdown showing the time remaining before that event and appears with different formatting when the event has passed
 
 The following **additional** features are implemented:
@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/CZ9qvKI.gif' title='Video Walkthrough' width='80%' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [Kap](https://getkap.co/) for macOS
@@ -44,7 +44,7 @@ GIF created with [Kap](https://getkap.co/) for macOS
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+I found the requirements a bit tricky to grasp at first, but I hope my implementation aligns with them. Since the API setup is similar to what we did in the lab, I had to spend more time tweaking the frontend to make sure it plays nicely with the data fetched from the backend.
 
 ## License
 
